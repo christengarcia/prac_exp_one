@@ -7,10 +7,19 @@ namespace prac_exp_one
     {
         static void Main(string[] args)
         {
-            int results = 50;
+            string userName = "";
+            int userAge = 0;
+            int currentYear = 0;
 
-            WriteLine("{0}! You scored {1} marks for your test.",
-                      "Good morning", results);
+            Write("Please enter your name: ");
+            userName = ReadLine();
+            Write("Please enter your age: ");
+            userAge = Convert.ToInt32(ReadLine());
+            Write("Please enter the current year: ");
+            currentYear = Convert.ToInt32(ReadLine());
+            WriteLine("Hello there! My name is {0} and I am {1} years old. " +
+                      "I was born in {2}.", userName, userAge, currentYear - userAge);
+
         }
     }
 }
